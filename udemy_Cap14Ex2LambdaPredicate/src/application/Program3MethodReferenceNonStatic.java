@@ -1,0 +1,25 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import entities.Product3NonStatic;
+
+public class Program3MethodReferenceNonStatic {
+
+	public static void main(String[] args) {
+
+		List<Product3NonStatic> list = new ArrayList<>();
+
+		list.add(new Product3NonStatic("Tv", 900.00));
+		list.add(new Product3NonStatic("Mouse", 50.00));
+		list.add(new Product3NonStatic("Tablet", 350.50));
+		list.add(new Product3NonStatic("HD Case", 80.90));
+
+		list.removeIf(Product3NonStatic::nonStaticProductPredicate);
+
+		for (Product3NonStatic p : list) {
+			System.out.println(p);
+		}
+	}
+}

@@ -1,0 +1,24 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import entities.Product1PriceUpdate;
+import util.PriceUpdate;
+
+public class Program1Interface {
+
+	public static void main(String[] args) {
+
+		List<Product1PriceUpdate> list = new ArrayList<>();
+
+		list.add(new Product1PriceUpdate("Tv", 900.00));
+		list.add(new Product1PriceUpdate("Mouse", 50.00));
+		list.add(new Product1PriceUpdate("Tablet", 350.50));
+		list.add(new Product1PriceUpdate("HD Case", 80.90));
+
+		list.forEach(new PriceUpdate());
+
+		list.forEach(System.out::println);
+	}
+}

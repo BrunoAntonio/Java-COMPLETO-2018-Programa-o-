@@ -1,0 +1,22 @@
+package test;
+
+import java.util.stream.Stream;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Stream <Integer> stream =Stream.of(1,2,3,4);
+		
+		stream.forEach(System.out::println);
+		
+		for(Stream s : stream) {
+			System.out.println(s);
+		}
+		
+        
+        
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package util;
+
+import java.util.function.Consumer;
+
+import entities.ProductPriceUpdate;
+
+public class PriceUpdate implements Consumer<ProductPriceUpdate> {
+
+	@Override
+	public void accept(ProductPriceUpdate p) {
+		p.setPrice(p.getPrice() * 1.1);
+	}
+}

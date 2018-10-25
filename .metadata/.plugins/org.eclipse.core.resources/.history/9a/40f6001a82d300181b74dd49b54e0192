@@ -1,0 +1,29 @@
+package application;
+
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Set<Integer> a = new TreeSet<>();
+		
+		
+		System.out.print("How many students for course A?");
+		int numbA =sc.nextInt();
+		
+		
+		for(int i=1; i<=numbA; i++) {
+				
+			sc.nextInt();
+			a.add(sc.nextLine());
+		}
+		
+		
+		sc.close();
+	}
+
+}

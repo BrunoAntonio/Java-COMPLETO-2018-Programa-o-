@@ -1,0 +1,26 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Stream <Integer> stream =Stream.of(1,2,3,4);
+		
+		stream.forEach(System.out::println);
+		
+		List<Integer> list = Arrays.asList(1,2,3,4);
+		
+		list.forEach(System.out::printLn);
+		}
+		
+        
+        
+
+	}
+
+}

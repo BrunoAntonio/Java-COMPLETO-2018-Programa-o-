@@ -1,0 +1,24 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import entities.Worker;
+
+public class Program {
+
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter full file path: ");
+		String path = sc.next();
+		
+		List <Worker> worker = new ArrayList<>();
+		
+		
+
+	}
+
+}
